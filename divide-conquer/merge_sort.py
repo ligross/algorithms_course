@@ -20,7 +20,7 @@ def merge_sort(input_list: list) -> list:
 
     first_list_cursor, second_list_cursor, input_list_cursor = 0, 0, 0
 
-    for i in range(min(len(first_list), len(second_list))):
+    while first_list_cursor < len(first_list) and second_list_cursor < len(second_list):
         if first_list[first_list_cursor] < second_list[second_list_cursor]:
             input_list[input_list_cursor] = first_list[first_list_cursor]
             first_list_cursor += 1
